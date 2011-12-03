@@ -1,0 +1,15 @@
+{
+    "name": "application-name"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+      "express": "2.5.1"
+    , "ejs": ">= 0.0.1"
+    , "socket.io": "0.8.x"
+    , "underscore": "1.2.2"
+  }
+  , "devDependencies": {
+      "mocha": "*"
+    , "should": "*"
+  }
+}
