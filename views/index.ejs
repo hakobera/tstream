@@ -1,2 +1,15 @@
-<h1><%= title %></h1>
-<p>Welcome to <%= title %></p>
+<ul id="tweets"></ul>
+
+<script>
+$(function() {
+  var tweets = $('#tweets');
+
+  var socket = io.connect();
+  socket.on('data', function (data) {
+    //console.log(data.text);
+    var tweet = $('<li>');
+    tweet.text(data.text);
+    tweets.prepend(tweet);
+  });
+});
+</script>
